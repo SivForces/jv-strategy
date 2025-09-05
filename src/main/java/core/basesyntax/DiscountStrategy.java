@@ -1,7 +1,12 @@
 package core.basesyntax;
 
 
-import core.basesyntax.strategy.*;
+import core.basesyntax.strategy.BirthdayDiscountService;
+import core.basesyntax.strategy.BlackFridayDiscountService;
+import core.basesyntax.strategy.DiscountService;
+import core.basesyntax.strategy.NewYearDiscountService;
+import core.basesyntax.strategy.DefaultDiscountService;
+
 
 public class DiscountStrategy {
     DiscountService getDiscountServiceBySpecialEvent(String specialEvent) {
